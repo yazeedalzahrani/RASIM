@@ -1,5 +1,3 @@
-// JavaScript to handle image expansion and spotlight effect
-
 document.addEventListener('DOMContentLoaded', function () {
     var images = document.querySelectorAll('.section-image');
     var overlay = document.createElement('div');
@@ -10,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
         image.addEventListener('click', function () {
             if (!image.classList.contains('image-expanded')) {
                 expandImage(image);
+            } else {
+                closeImage(image);
             }
         });
     });
@@ -23,26 +23,26 @@ document.addEventListener('DOMContentLoaded', function () {
         image.classList.add('spotlight');
         
         overlay.style.display = 'block'; // Show the overlay
-        image.classList.toggle('image-expanded');
-        document.body.classList.toggle('no-scroll');
+        overlay.classList.add('overlay-expanded'); // Add class to apply styles
+        image.classList.add('image-expanded');
+        document.body.classList.add('no-scroll');
         
-        if (image.classList.contains('image-expanded')) {
-            var closeButton = document.createElement('button');
-            closeButton.textContent = 'Close';
-            closeButton.className = 'close-button-on-image';
-            closeButton.addEventListener('click', function (event) {
-                event.stopPropagation(); // Prevent the click event from propagating to the image
-                closeImage(image);
-            });
-            image.parentElement.appendChild(closeButton);
-        }
+        var closeButton = document.createElement('button');
+        closeButton.textContent = 'Close';
+        closeButton.className = 'close-button-on-image';
+        closeButton.addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevent the click event from propagating to the image
+            closeImage(image);
+        });
+        image.parentNode.appendChild(closeButton);
     }
 
     function closeImage(image) {
         overlay.style.display = 'none'; // Hide the overlay
+        overlay.classList.remove('overlay-expanded'); // Remove expanded overlay class
         image.classList.remove('image-expanded');
         document.body.classList.remove('no-scroll');
-        var closeButton = image.parentElement.querySelector('.close-button-on-image');
+        var closeButton = image.parentNode.querySelector('.close-button-on-image');
         if (closeButton) {
             closeButton.remove();
         }
