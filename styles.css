@@ -1,9 +1,14 @@
 /* styles.css */
 
+/* styles.css */
+
 /* Styles for the navigation bar */
 nav {
-    background-color: #c2a388;
-    color: #fff;
+    background-image: url('img/sdgdgg.png'); /* Replace 'your-image-url.jpg' with the path to your image */
+    background-size: cover;
+    background-position: top;
+    box-shadow: 0 0 10px rgba(255, 159, 4, 0.739);
+
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -11,7 +16,7 @@ nav {
 }
 
 .logo {
-    width: 50px;
+    width: 40px;
 }
 
 nav ul {
@@ -31,8 +36,10 @@ nav ul li:last-child {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-weight: bold;
+    border: #000000;
+
 }
 
 /* Styles for sections */
@@ -83,11 +90,21 @@ section {
     border-radius: 5px;
     cursor: pointer;
 }
+/* styles.css */
+
+/* styles.css */
 
 /* Styles for footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-image: url('img/footer.png'); /* Replace 'your-image-url.jpg' with the path to your image */
+    background-size: cover;
+    background-position: top;
+    color: #000000; /* Set text color to white so it's visible on top of the image */
     text-align: center;
-    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(255, 159, 4, 0.739);
+    color: #000000;
+    font-weight: bold;
+    border: #000000;
+
+
 }
