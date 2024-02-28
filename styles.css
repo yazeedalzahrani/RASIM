@@ -43,10 +43,6 @@ mark {
 	color: inherit;
 }
 
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
 
 input, select, textarea {
 	-moz-appearance: none;
@@ -96,14 +92,7 @@ input, select, textarea {
 		line-height: 2.375;
 	}
 
-	a {
-		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		text-decoration: none;
-	}
+	
 
 		a:hover {
 			border-bottom-color: transparent;
@@ -233,15 +222,8 @@ input, select, textarea {
 		color: #212931;
 	}
 
-	a {
-		color: #db6b09;
-		border-bottom-color: rgba(33, 41, 49, 0.5);
-	}
+	
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: #010000 !important;
-		}
 
 	strong, b {
 		color: #212931;
@@ -264,44 +246,6 @@ input, select, textarea {
 		border-bottom-color: #eeeeee;
 	}
 
-
-	
-/* Icon */
-
-	.icon {
-		text-decoration: none;
-		border-bottom: none;
-		position: relative;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
-		.icon:before {
-			line-height: inherit;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
 
 /* Image */
 
@@ -496,15 +440,7 @@ input, select, textarea {
 
 /* Wrapper */
 
-	#wrapper {
-		-moz-transition: opacity 0.5s ease;
-		-webkit-transition: opacity 0.5s ease;
-		-ms-transition: opacity 0.5s ease;
-		transition: opacity 0.5s ease;
-		position: relative;
-		z-index: 1;
-		overflow: hidden;
-	}
+	
 
 		#wrapper > .bg {
 			position: absolute;
@@ -527,27 +463,7 @@ input, select, textarea {
 				height: 100vh;
 			}
 
-		#wrapper.fade-in:before {
-			pointer-events: none;
-			-moz-transition: opacity 1s ease-in-out;
-			-webkit-transition: opacity 1s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out;
-			transition: opacity 1s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
-			background: #1e252d;
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0;
-			position: fixed;
-			top: 0;
-			width: 100%;
-		}
-
+		
 	
 		
 /* Intro */
@@ -601,11 +517,11 @@ input, select, textarea {
 		}
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
-			color: #000000;
+			color: #070606;
 		}
 
 		#intro blockquote {
-			border-left-color: #ff0000;
+			border-left-color: #ffffff;
 		}
 
 		#intro code {
@@ -781,14 +697,7 @@ input, select, textarea {
 					padding: 0 2rem;
 				}
 
-					#nav ul.links li a:hover {
-						color: inherit !important;
-						background-color: rgba(255, 255, 255, 0.1);
-					}
-
-				#nav ul.links li.active {
-					background-color: #0000002a;
-				}
+			
 
 /* Main */
 
